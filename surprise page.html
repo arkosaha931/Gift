@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Journey Till Now</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+</head>
+<body class="body3">
+    <h1>Here is your Surprise!!<span class="emoji">❤️✨</span></h1>
+    <div class="video-container">
+        <video id="journeyVideo" controls>
+            <source src="surprise - Made with Clipchamp.mp4" type="video/mp4"> <!-- Replace with your video URL -->
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div id="message" class="hidden"><pre>We have a Long Journey ahead!
+    I LOVE U 3000❤️❤️❤️❤️
+    </pre></div>
+
+    <script>
+        const video = document.getElementById('journeyVideo');
+        const message = document.getElementById('message');
+
+        video.addEventListener('ended', () => {
+            message.classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>
